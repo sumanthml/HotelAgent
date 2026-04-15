@@ -1,44 +1,74 @@
-# 🏨 HotelGuest: Precision Travel Intelligence
+# 🏨 HotelGuest: Advanced Multi-Agent Intelligence Engine
+> **Autonomous Travel Discovery & Market Analytics Platform**
 
-![Status](https://img.shields.io/badge/Status-Live-brightgreen)
-![Version](https://img.shields.io/badge/Version-1.0.0-blue)
-![Architecture](https://img.shields.io/badge/Engine-Multi--Agent--Orchestration-orange)
-
-### 🌍 [LAUNCH HOTELGUEST LIVE](https://hotelguest.streamlit.app/)
-
-**HotelGuest** is a high-performance discovery engine designed to eliminate the friction of modern travel planning. By utilizing a proprietary multi-agent decision-making graph, it bypasses the "noise" of traditional booking sites to deliver a curated list of the **Top 5 Hotels** matching your exact profile.
+[![Live App](https://img.shields.io/badge/LIVE_DEMO-Launch_Application-brightgreen?style=for-the-badge&logo=streamlit)](https://hotelguest.streamlit.app/)
+[![Python](https://img.shields.io/badge/Python-3.11+-blue?style=for-the-badge&logo=python)](https://www.python.org/)
+[![Framework](https://img.shields.io/badge/Framework-LangGraph-orange?style=for-the-badge)](https://github.com/langchain-ai/langgraph)
+[![Model](https://img.shields.io/badge/LLM-Gemini_1.5_Flash-red?style=for-the-badge&logo=google-gemini)](https://ai.google.dev/)
 
 ---
 
-## 📊 High-Stakes Analytics & Logic
-HotelGuest doesn't just search; it **analyzes**. The system executes a three-stage intelligent pipeline:
-
-* **Requirement Synthesis:** Instead of rigid filters, our NLP layer understands context. Whether it's "quiet for work" or "walking distance to SSE," the system translates human needs into data parameters.
-* **Market Scraping:** Live integration with global hotel engines ensures pricing is accurate to the second.
-* **Quality Review:** Our Reviewer Agent performs a comparative analysis, ranking properties not just by price, but by value-density and guest sentiment.
+## 🚀 Experience the Future of Travel
+### 🔗 **[ACCESS HOTELGUEST PRODUCTION ENVIRONMENT](https://hotelguest.streamlit.app/)**
+*Precision research. Zero friction. Curated intelligence.*
 
 ---
 
-## 🚀 System Features
-* **Curated Top 5:** We don't give you 100 pages. we give you the 5 best options. Period.
-* **Feature Extraction:** Automated identification of high-value amenities (High-speed WiFi, Gym access, Proximity to landmarks).
-* **Zero-Overhead UI:** A clean, distraction-free interface focused on results, not ads.
-* **Real-Time Date Optimization:** Dynamic check-in/out logic to satisfy real-world availability.
+## 📖 Overview
+**HotelGuest** is an industrial-grade travel research agent that replaces traditional manual searching with **Autonomous Multi-Agent Orchestration**. Built on top of Google's Gemini 1.5 Flash and the LangGraph framework, it executes a complex, cyclic workflow to retrieve, filter, and rank global hotel data in real-time.
+
+While traditional platforms show you thousands of sponsored results, **HotelGuest** acts as a digital concierge, utilizing a "State Machine" to ensure every recommendation is mathematically and contextually aligned with your specific requirements.
 
 ---
 
-## 🛠️ Performance Tech Stack
-| Layer | Technology |
-| :--- | :--- |
-| **Logic Orchestration** | LangGraph (Autonomous State Management) |
-| **Neural Engine** | Google Gemini 2.5 Flash |
-| **Data Retrieval** | SerpApi / Google Hotels Engine |
-| **Interface** | Streamlit (High-Concurrency Web Framework) |
+## 🏗️ System Architecture & Logic Flow
+The core of HotelGuest is a **Directed Acyclic Graph (DAG)** that manages the lifecycle of a search request.
+
+### 🧩 The Agentic Nodes
+1. **The Architect (Requirements Processor):** - Uses NLP to transform vague human desires into structured JSON payloads.
+   - **Logic:** Identifies intent, extracts budget caps, and synthesizes optimized search queries.
+2. **The Researcher (Live Hotel Searcher):** - Interfaces directly with the **SerpApi Google Hotels Engine**.
+   - **Logic:** Handles dynamic date injection and geo-location targeting.
+3. **The Analyst (Expert Reviewer):** - Performs a "Deep Scan" of the top 10 results.
+   - **Logic:** Filters by budget, analyzes amenities, and selects the **Top 5 Properties** based on a value-density algorithm.
+
+### 🔄 State Management
+The system utilizes a `TypedDict` state to maintain "Memory" across nodes:
+- `hotels`: An annotated list that accumulates data.
+- `loop_count`: A safety mechanism to prevent infinite API calls.
+- `max_budget`: A persistent constraint that guides the Analyst node.
 
 ---
 
-## 📦 Deployment & Setup
-1. **Clone & Install:**
-   ```bash
-   git clone [https://github.com/sumanthml/HotelAgent.git](https://github.com/sumanthml/HotelAgent.git)
-   pip install -r requirements.txt
+## 🛠️ Technical Deep Dive
+
+### 🔐 Security & Operations
+- **Secret Masking:** Utilizes Streamlit TOML secrets for secure API key injection (Environment Isolation).
+- **Concurrency:** Built to handle high-concurrency requests using FastAPI-style logic within the Streamlit lifecycle.
+
+### 📊 Performance Analytics
+| Feature | Implementation | Benefit |
+| :--- | :--- | :--- |
+| **Search Engine** | Google Hotels via SerpApi | Access to 100% live inventory. |
+| **Decision Engine** | LangGraph State Machine | Deterministic, reliable AI behavior. |
+| **Language Model** | Gemini 1.5 Flash | Sub-second inference latency for real-time chat. |
+
+---
+
+## 💻 Developer Guide (Local Deployment)
+
+### Prerequisites
+- Python 3.11 or higher
+- Google Gemini API Key
+- SerpApi Key
+
+### Installation
+```bash
+# Clone the repository
+git clone [https://github.com/sumanthml/HotelAgent.git](https://github.com/sumanthml/HotelAgent.git)
+
+# Navigate to directory
+cd HotelAgent
+
+# Install dependencies (Optimized)
+pip install streamlit langgraph langchain-google-genai google-search-results python-dotenv
