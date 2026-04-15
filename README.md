@@ -4,7 +4,7 @@
 [![Live App](https://img.shields.io/badge/LIVE_DEMO-Launch_Application-brightgreen?style=for-the-badge&logo=streamlit)](https://hotelguest.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.11+-blue?style=for-the-badge&logo=python)](https://www.python.org/)
 [![Framework](https://img.shields.io/badge/Framework-LangGraph-orange?style=for-the-badge)](https://github.com/langchain-ai/langgraph)
-[![Model](https://img.shields.io/badge/LLM-Gemini_1.5_Flash-red?style=for-the-badge&logo=google-gemini)](https://ai.google.dev/)
+[![Model](https://img.shields.io/badge/LLM-Gemini_2.5_Flash-red?style=for-the-badge&logo=google-gemini)](https://ai.google.dev/)
 
 ---
 
@@ -15,7 +15,7 @@
 ---
 
 ## 📖 Overview
-**HotelGuest** is an industrial-grade travel research agent that replaces traditional manual searching with **Autonomous Multi-Agent Orchestration**. Built on top of Google's Gemini 1.5 Flash and the LangGraph framework, it executes a complex, cyclic workflow to retrieve, filter, and rank global hotel data in real-time.
+**HotelGuest** is an industrial-grade travel research agent that replaces traditional manual searching with **Autonomous Multi-Agent Orchestration**. Built on top of Google's Gemini 2.5 Flash and the LangGraph framework, it executes a complex, cyclic workflow to retrieve, filter, and rank global hotel data in real-time.
 
 While traditional platforms show you thousands of sponsored results, **HotelGuest** acts as a digital concierge, utilizing a "State Machine" to ensure every recommendation is mathematically and contextually aligned with your specific requirements.
 
@@ -51,7 +51,7 @@ The system utilizes a `TypedDict` state to maintain "Memory" across nodes:
 | :--- | :--- | :--- |
 | **Search Engine** | Google Hotels via SerpApi | Access to 100% live inventory. |
 | **Decision Engine** | LangGraph State Machine | Deterministic, reliable AI behavior. |
-| **Language Model** | Gemini 1.5 Flash | Sub-second inference latency for real-time chat. |
+| **Language Model** | Gemini 2.5 Flash | Sub-second inference latency for real-time chat. |
 
 ---
 
