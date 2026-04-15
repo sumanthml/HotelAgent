@@ -31,7 +31,7 @@ HotelGuest doesn't just search; it **analyzes**. The system executes a three-sta
 | Layer | Technology |
 | :--- | :--- |
 | **Logic Orchestration** | LangGraph (Autonomous State Management) |
-| **Neural Engine** | Google Gemini 1.5 Flash |
+| **Neural Engine** | Google Gemini 2.5 Flash |
 | **Data Retrieval** | SerpApi / Google Hotels Engine |
 | **Interface** | Streamlit (High-Concurrency Web Framework) |
 
